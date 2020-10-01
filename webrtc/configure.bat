@@ -5,7 +5,7 @@ set DEPOT_TOOLS_WIN_TOOLCHAIN=0
 echo Configuring "out/Debug" build...
 
 call gn gen out/Debug --ide=vs --args="!="!^
-    host_cpu=\"x86\" !="^"!^
+    host_cpu=\"x64\" !="^"!^
     target_os=\"win\" !="^"!^
     is_clang=false !="^"!^
     is_component_build=false !="^"!^
@@ -22,7 +22,7 @@ call gn gen out/Debug --ide=vs --args="!="!^
     rtc_build_opus=false !="^"!^
     rtc_build_ssl=false !="^"!^
     rtc_ssl_root=\"../../../openssl_1_1_1/include\" !="^"!^
-    rtc_ssl_libs=[\"../../../openssl_1_1_1/out32.dbg/libssl.lib\",\"../../../openssl_1_1_1/out32.dbg/libcrypto.lib\"] !="^"!^
+    rtc_ssl_libs=[\"../../../openssl_1_1_1/out64.dbg/libssl.lib\",\"../../../openssl_1_1_1/out64.dbg/libcrypto.lib\"] !="^"!^
     rtc_builtin_ssl_root_certificates=true !="^"!^
     rtc_build_ffmpeg=false !="^"!^
     rtc_ffmpeg_root=\"../../../ffmpeg\" !="^"!^
@@ -34,7 +34,7 @@ call gn gen out/Debug --ide=vs --args="!="!^
 echo Configuring "out/Release" build...
 
 call gn gen out/Release --ide=vs --args="!="!^
-    host_cpu=\"x86\" !="^"!^
+    host_cpu=\"x64\" !="^"!^
     target_os=\"win\" !="^"!^
     is_clang=false !="^"!^
     is_component_build=false !="^"!^
@@ -51,7 +51,7 @@ call gn gen out/Release --ide=vs --args="!="!^
     rtc_build_opus=false !="^"!^
     rtc_build_ssl=false !="^"!^
     rtc_ssl_root=\"../../../openssl_1_1_1/include\" !="^"!^
-    rtc_ssl_libs=[\"../../../openssl_1_1_1/out32/libssl.lib\",\"../../../openssl_1_1_1/out32/libcrypto.lib\"] !="^"!^
+    rtc_ssl_libs=[\"../../../openssl_1_1_1/out64/libssl.lib\",\"../../../openssl_1_1_1/out64/libcrypto.lib\"] !="^"!^
     rtc_builtin_ssl_root_certificates=true !="^"!^
     rtc_build_ffmpeg=false !="^"!^
     rtc_ffmpeg_root=\"../../../ffmpeg\" !="^"!^
